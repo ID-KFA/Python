@@ -20,12 +20,14 @@
 """
 revenue = int(input("Введите выручку фирмы: "))
 costs = int(input("Введите издержки фирмы: "))
-profit = revenue-costs
+profit = revenue - costs
 
 if profit > 0:
     print(f"Финансовый результат — прибыль. Ее величина: {profit}")
-    print(f"Рентабельность выручки: {profit/revenue}")
+    print(f"Рентабельность выручки: {profit / revenue}")
     workers = int(input("Введите количество работников фирмы: "))
     print(f"Прибыль фирмы в расчете на одного сотрудника: {profit / workers}")
+elif profit == 0:
+    print("Финансовый результат — безубыточный уровень")
 else:
     print("Финансовый результат — убыток")

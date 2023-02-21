@@ -42,10 +42,6 @@ def calc():
     first_number, second_number, result = 0, 0, 0
     try:
         first_number = int(input("Введите первое число: "))
-    except ValueError:
-        print("Вместо числа вы ввели строку")
-        calc()
-    try:
         second_number = int(input("Введите второе число: "))
     except ValueError:
         print("Вместо числа вы ввели строку")

@@ -25,7 +25,7 @@ def qwize(i, s=9):
         print("Вы отгадали!")
         sys.exit()
     qwize(i, s - 1)
-    return None
+
 
 
 n = random.randint(0, 100)

@@ -9,20 +9,18 @@
 Нужно обойтисть без создания массива!
 """
 
-t = 1
 
-
-def sum_row(i, s=1):
+def sum_row(i, s=1, t=1):
     """Считает сумму элементов ряда"""
-    global t
+
     if i < 2:
-        return print(f", их сумма - {t}")
+        print(s, end=" ")
+        return print(f", их сумма: {t}")
+    print(s, end=" ")
     s *= -0.5
     t += s
-    sum_row(i - 1, s)
-    return None
+    sum_row(i - 1, s, t)
 
 
 n = int(input("Введите количество элементов ряда: "))
-print(f"Количество элементов -{n}", end="")
 sum_row(n)

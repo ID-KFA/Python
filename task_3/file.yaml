@@ -1,0 +1,17 @@
+items:
+- computer
+- printer
+- keyboard
+- mouse
+- Bicycle
+- Самокат
+- Picture camera
+items_price:
+  Bicycle: 2000€
+  Picture camera: 340€
+  computer: 200€-1000€
+  keyboard: 5€-50€
+  mouse: 4€-7€
+  printer: 100€-300€
+  Самокат: 4322€
+items_quantity: 7
